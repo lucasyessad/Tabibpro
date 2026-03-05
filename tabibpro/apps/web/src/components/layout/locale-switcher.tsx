@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Sélecteur de Langue
+// TabibPro — Sélecteur de Langue
 // FR | عربي | ⵜⵎⵣ | EN
 // Changement instantané sans rechargement
 // ============================================================

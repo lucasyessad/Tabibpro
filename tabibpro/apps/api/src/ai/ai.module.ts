@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Module IA Médicale
+// TabibPro — Module IA Médicale
 // Intégration Claude API avec support darija algérien
 // ============================================================
 

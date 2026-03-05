@@ -1,17 +1,17 @@
 version: '3.8'
 
 # ============================================================
-# MedGest Pro — Docker Compose
+# TabibPro — Docker Compose
 # Déploiement local complet — Édition Algérie
 # ============================================================
 
-name: medgest-pro
+name: tabibpro
 
 services:
 
   # ---- Application Backend (NestJS) ----
   api:
-    image: medgestpro/api:latest
+    image: tabibpro/api:latest
     build:
       context: ./apps/api
       dockerfile: Dockerfile
@@ -58,7 +58,7 @@ services:
 
   # ---- Application Frontend IHM Pro (Next.js) ----
   app:
-    image: medgestpro/app:latest
+    image: tabibpro/app:latest
     build:
       context: ./apps/web
       dockerfile: Dockerfile
@@ -68,8 +68,8 @@ services:
     env_file: .env
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_API_URL=https://api.medgestpro.dz
-      - NEXT_PUBLIC_APP_URL=https://app.medgestpro.dz
+      - NEXT_PUBLIC_API_URL=https://api.tabibpro.dz
+      - NEXT_PUBLIC_APP_URL=https://app.tabibpro.dz
       - NEXT_PUBLIC_DEFAULT_LOCALE=fr
     ports:
       - "3000:3000"
@@ -85,7 +85,7 @@ services:
 
   # ---- Portail Patient (Next.js) ----
   patient-portal:
-    image: medgestpro/patient-portal:latest
+    image: tabibpro/patient-portal:latest
     build:
       context: ./apps/patient-portal
       dockerfile: Dockerfile
@@ -95,8 +95,8 @@ services:
     env_file: .env
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_API_URL=https://api.medgestpro.dz
-      - NEXT_PUBLIC_PORTAL_URL=https://patient.medgestpro.dz
+      - NEXT_PUBLIC_API_URL=https://api.tabibpro.dz
+      - NEXT_PUBLIC_PORTAL_URL=https://patient.tabibpro.dz
       - NEXT_PUBLIC_DEFAULT_LOCALE=fr
     ports:
       - "3002:3000"
@@ -111,7 +111,7 @@ services:
     container_name: medgest-pg-medical
     restart: unless-stopped
     environment:
-      - POSTGRES_DB=${DB_MEDICAL_NAME:-medgest_medical}
+      - POSTGRES_DB=${DB_MEDICAL_NAME:-tabibpro_medical}
       - POSTGRES_USER=${DB_MEDICAL_USER:-medgest}
       - POSTGRES_PASSWORD=${DB_MEDICAL_PASSWORD}
       - PGDATA=/var/lib/postgresql/data/pgdata
@@ -123,7 +123,7 @@ services:
     networks:
       - medgest-internal
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_MEDICAL_USER:-medgest} -d ${DB_MEDICAL_NAME:-medgest_medical}"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_MEDICAL_USER:-medgest} -d ${DB_MEDICAL_NAME:-tabibpro_medical}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -145,7 +145,7 @@ services:
     container_name: medgest-pg-service
     restart: unless-stopped
     environment:
-      - POSTGRES_DB=${DB_SERVICE_NAME:-medgest_service}
+      - POSTGRES_DB=${DB_SERVICE_NAME:-tabibpro_service}
       - POSTGRES_USER=${DB_SERVICE_USER:-medgest}
       - POSTGRES_PASSWORD=${DB_SERVICE_PASSWORD}
       - PGDATA=/var/lib/postgresql/data/pgdata
@@ -157,7 +157,7 @@ services:
     networks:
       - medgest-internal
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${DB_SERVICE_USER:-medgest} -d ${DB_SERVICE_NAME:-medgest_service}"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_SERVICE_USER:-medgest} -d ${DB_SERVICE_NAME:-tabibpro_service}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -238,7 +238,7 @@ services:
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
-      - "--certificatesresolvers.letsencrypt.acme.email=admin@medgestpro.dz"
+      - "--certificatesresolvers.letsencrypt.acme.email=admin@tabibpro.dz"
       - "--certificatesresolvers.letsencrypt.acme.storage=/certs/acme.json"
       - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
       - "--log.level=INFO"
@@ -255,11 +255,11 @@ services:
 
   # ---- Sauvegarde automatique ----
   backup:
-    image: medgestpro/backup:latest
+    image: tabibpro/backup:latest
     build:
       context: ./docker/backup
       dockerfile: Dockerfile
-    container_name: medgest-backup
+    container_name: tabibpro-backup
     restart: unless-stopped
     environment:
       - BACKUP_SCHEDULE=${BACKUP_SCHEDULE:-0 2 * * *}
@@ -272,7 +272,7 @@ services:
       - pg_medical:/source/pg_medical:ro
       - pg_service:/source/pg_service:ro
       - minio_data:/source/files:ro
-      - ${BACKUP_PATH:-/tmp/medgest-backup}:/backups
+      - ${BACKUP_PATH:-/tmp/tabibpro-backup}:/backups
     depends_on:
       - postgres-medical
       - postgres-service
@@ -281,7 +281,7 @@ services:
 
   # ---- Worker BullMQ (tâches asynchrones) ----
   worker:
-    image: medgestpro/api:latest
+    image: tabibpro/api:latest
     container_name: medgest-worker
     restart: unless-stopped
     env_file: .env

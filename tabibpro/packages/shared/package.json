@@ -1,7 +1,7 @@
 {
-  "name": "@medgest/shared",
+  "name": "@tabibpro/shared",
   "version": "1.0.0",
-  "description": "Types et utilitaires partagés — MedGest Pro",
+  "description": "Types et utilitaires partagés — TabibPro",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {

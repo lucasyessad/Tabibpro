@@ -1,11 +1,11 @@
 version: '3.8'
 
 # ============================================================
-# MedGest Pro — Docker Compose DÉVELOPPEMENT
+# TabibPro — Docker Compose DÉVELOPPEMENT
 # Surcharge du docker-compose.yml pour le dev local
 # ============================================================
 
-name: medgest-pro-dev
+name: tabibpro-dev
 
 services:
 

@@ -1,5 +1,5 @@
 {
-  "name": "@medgest/db-service",
+  "name": "@tabibpro/db-service",
   "version": "1.0.0",
   "description": "Schéma Prisma — Base de données service (cloud ou local)",
   "main": "./generated/client/index.js",

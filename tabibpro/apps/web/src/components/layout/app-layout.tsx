@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Layout Application Professionnelle
+// TabibPro — Layout Application Professionnelle
 // Sidebar + Header avec sélecteur de langue + connectivité
 // Support RTL natif (arabe)
 // ============================================================
@@ -92,7 +92,7 @@ export function AppLayout({ children }: AppLayoutProps) {
                   exit={{ opacity: 0, width: 0 }}
                   className="text-sm font-semibold"
                 >
-                  MedGest Pro
+                  TabibPro
                 </motion.span>
               )}
             </AnimatePresence>

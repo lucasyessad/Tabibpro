@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Configuration Next.js 15
+// TabibPro — Configuration Next.js 15
 // IHM Professionnelle — Support multilingue + PWA
 // ============================================================
 
@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
   // ---- Images ----
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: '*.medgestpro.dz' },
+      { protocol: 'https', hostname: '*.tabibpro.dz' },
     ],
     formats: ['image/webp', 'image/avif'],
   },

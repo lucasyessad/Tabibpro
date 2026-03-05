@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Dashboard Principal
+// TabibPro — Dashboard Principal
 // Adapté au contexte algérien (DZD, CNAS, weekend VEN-SAM)
 // ============================================================
 

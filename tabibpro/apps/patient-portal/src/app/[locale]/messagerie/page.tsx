@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Portail Patient — Messagerie avec Darija
+// TabibPro — Portail Patient — Messagerie avec Darija
 // Le patient peut écrire en darija algérien
 // L'IA détecte et propose une reformulation en français médical
 // ============================================================

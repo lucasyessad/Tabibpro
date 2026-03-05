@@ -1,7 +1,7 @@
 {
-  "name": "medgest-pro",
+  "name": "tabibpro",
   "version": "1.0.0",
-  "description": "MedGest Pro — Logiciel de gestion médicale avec IA diagnostique — Édition Algérie",
+  "description": "TabibPro — Logiciel de gestion médicale avec IA diagnostique — Édition Algérie",
   "private": true,
   "workspaces": [
     "apps/*",

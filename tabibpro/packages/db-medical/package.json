@@ -1,5 +1,5 @@
 {
-  "name": "@medgest/db-medical",
+  "name": "@tabibpro/db-medical",
   "version": "1.0.0",
   "description": "Schéma Prisma — Base de données médicale locale",
   "main": "./generated/client/index.js",

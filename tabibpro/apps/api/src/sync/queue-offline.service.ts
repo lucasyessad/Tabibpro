@@ -1,10 +1,10 @@
 // ============================================================
-// MedGest Pro — File d'Attente Offline
+// TabibPro — File d'Attente Offline
 // Messages et notifications différés pendant déconnexion
 // ============================================================
 
 import { Injectable, Logger } from '@nestjs/common';
-import type { SyncItem } from '@medgest/shared';
+import type { SyncItem } from '@tabibpro/shared';
 
 @Injectable()
 export class QueueOfflineService {

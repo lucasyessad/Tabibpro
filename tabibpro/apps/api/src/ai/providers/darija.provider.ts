@@ -1,13 +1,13 @@
 // ============================================================
-// MedGest Pro — Traducteur Darija Algérien
+// TabibPro — Traducteur Darija Algérien
 // Claude comprend nativement le darija algérien
 // ============================================================
 
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import Anthropic from '@anthropic-ai/sdk';
-import type { DarijaTranslationResult } from '@medgest/shared';
-import { detectDarija } from '@medgest/shared';
+import type { DarijaTranslationResult } from '@tabibpro/shared';
+import { detectDarija } from '@tabibpro/shared';
 
 @Injectable()
 export class DarijaTranslatorProvider {

@@ -1,5 +1,5 @@
 -- ============================================================
--- MedGest Pro — Init DB médicale — Extensions PostgreSQL
+-- TabibPro — Init DB médicale — Extensions PostgreSQL
 -- ============================================================
 
 -- Extension pgvector pour les embeddings IA
@@ -20,6 +20,6 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto;
 -- Message de confirmation
 DO $$
 BEGIN
-    RAISE NOTICE 'MedGest Pro — Extensions PostgreSQL initialisées avec succès';
+    RAISE NOTICE 'TabibPro — Extensions PostgreSQL initialisées avec succès';
     RAISE NOTICE 'Extensions : pgvector, unaccent, pg_trgm, uuid-ossp, pgcrypto';
 END $$;

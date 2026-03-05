@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Module Algérie
+// TabibPro — Module Algérie
 // Référentiels, CNAS, pharmacopée, calendrier algérien
 // ============================================================
 

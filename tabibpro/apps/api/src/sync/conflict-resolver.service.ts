@@ -1,10 +1,10 @@
 // ============================================================
-// MedGest Pro — Résolution de Conflits de Synchronisation
+// TabibPro — Résolution de Conflits de Synchronisation
 // Stratégie : last-write-wins avec possibilité de merge manuel
 // ============================================================
 
 import { Injectable, Logger } from '@nestjs/common';
-import type { SyncItem } from '@medgest/shared';
+import type { SyncItem } from '@tabibpro/shared';
 
 export interface ConflictResolution {
   type: 'auto' | 'manual';

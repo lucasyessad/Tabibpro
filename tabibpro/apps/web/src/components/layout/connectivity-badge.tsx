@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Badge de Connectivité
+// TabibPro — Badge de Connectivité
 // Indicateur : 🟢 En ligne | 🟡 Synchronisation | 🔴 Hors ligne
 // ============================================================
 

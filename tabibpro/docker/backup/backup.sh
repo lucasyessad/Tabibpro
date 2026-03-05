@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-# MedGest Pro — Script de Sauvegarde Automatique
+# TabibPro — Script de Sauvegarde Automatique
 # Sauvegarde chiffrée des bases de données et fichiers
 # Conformité Loi 18-07 (protection des données)
 # ============================================================
@@ -13,7 +13,7 @@ RETENTION_DAYS="${RETENTION_DAYS:-30}"
 ENCRYPTION_KEY="${ENCRYPTION_KEY}"
 
 echo "=============================================="
-echo " MedGest Pro — Sauvegarde ${TIMESTAMP}"
+echo " TabibPro — Sauvegarde ${TIMESTAMP}"
 echo "=============================================="
 
 # Créer répertoire de backup du jour
@@ -24,7 +24,7 @@ echo "[$(date)] Sauvegarde DB médicale..."
 PGPASSWORD="${PGPASSWORD_MEDICAL}" pg_dump \
     -h postgres-medical \
     -U "${DB_MEDICAL_USER:-medgest}" \
-    -d "${DB_MEDICAL_NAME:-medgest_medical}" \
+    -d "${DB_MEDICAL_NAME:-tabibpro_medical}" \
     --format=custom \
     --compress=9 \
     --file="${BACKUP_DIR}/${TIMESTAMP}/medical.dump"
@@ -36,7 +36,7 @@ echo "[$(date)] Sauvegarde DB service..."
 PGPASSWORD="${PGPASSWORD_SERVICE}" pg_dump \
     -h postgres-service \
     -U "${DB_SERVICE_USER:-medgest}" \
-    -d "${DB_SERVICE_NAME:-medgest_service}" \
+    -d "${DB_SERVICE_NAME:-tabibpro_service}" \
     --format=custom \
     --compress=9 \
     --file="${BACKUP_DIR}/${TIMESTAMP}/service.dump" 2>/dev/null || echo "[$(date)] DB service: ignorée (cloud mode)"

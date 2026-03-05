@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Service d'Anonymisation
+// TabibPro — Service d'Anonymisation
 // Les données envoyées à l'IA sont anonymisées (Loi 18-07)
 // ============================================================
 

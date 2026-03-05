@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Seed Data — 58 Wilayas d'Algérie
+// TabibPro — Seed Data — 58 Wilayas d'Algérie
 // ============================================================
 
 export const WILAYAS_DZ = [

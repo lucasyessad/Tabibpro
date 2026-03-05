@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Audit IA — Journal de traçabilité complet
+// TabibPro — Audit IA — Journal de traçabilité complet
 // Conformité réglementaire — Algérie
 // ============================================================
 

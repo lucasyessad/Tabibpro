@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Validateurs Zod partagés
+// TabibPro — Validateurs Zod partagés
 // ============================================================
 
 import { z } from 'zod';

@@ -1,4 +1,4 @@
-# MedGest Pro — Logiciel de Gestion Médicale avec IA Diagnostique
+# TabibPro — Logiciel de Gestion Médicale avec IA Diagnostique
 
 ## Édition Algérie 🇩🇿
 
@@ -9,7 +9,7 @@
 ## Architecture
 
 ```
-medgest-pro/
+tabibpro/
 ├── apps/
 │   ├── api/              # Backend NestJS 11
 │   ├── web/              # IHM Professionnelle Next.js 15
@@ -151,6 +151,6 @@ Points clés :
 
 ## Licence
 
-Propriétaire — MedGest Pro © 2026
+Propriétaire — TabibPro © 2026
 
-Contact : support@medgestpro.dz
+Contact : support@tabibpro.dz

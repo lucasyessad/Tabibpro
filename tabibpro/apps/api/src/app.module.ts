@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Module racine NestJS
+// TabibPro — Module racine NestJS
 // ============================================================
 
 import { Module, MiddlewareConsumer, NestModule } from '@nestjs/common';

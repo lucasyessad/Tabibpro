@@ -1,10 +1,10 @@
 // ============================================================
-// MedGest Pro — Service Worker (PWA Offline-First)
+// TabibPro — Service Worker (PWA Offline-First)
 // Mode hors ligne complet — Critique pour l'Algérie
 // Zones à connectivité limitée (Sud, zones rurales)
 // ============================================================
 
-const CACHE_VERSION = 'medgest-v1';
+const CACHE_VERSION = 'tabibpro-v1';
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const DYNAMIC_CACHE = `${CACHE_VERSION}-dynamic`;
 const MEDICAL_DATA_CACHE = `${CACHE_VERSION}-medical`;
@@ -38,7 +38,7 @@ const ONLINE_ONLY_ROUTES = [
 // Installation
 // ============================================================
 self.addEventListener('install', (event) => {
-  console.log('[SW] Installation — MedGest Pro Offline Mode');
+  console.log('[SW] Installation — TabibPro Offline Mode');
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => {
       return cache.addAll(STATIC_ASSETS);

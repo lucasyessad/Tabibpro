@@ -1,7 +1,7 @@
 {
-  "name": "@medgest/patient-portal",
+  "name": "@tabibpro/patient-portal",
   "version": "1.0.0",
-  "description": "MedGest Pro — Portail Patient multilingue — Inscription par téléphone + darija",
+  "description": "TabibPro — Portail Patient multilingue — Inscription par téléphone + darija",
   "private": true,
   "scripts": {
     "dev": "next dev --port 3002",
@@ -11,7 +11,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@medgest/shared": "workspace:*",
+    "@tabibpro/shared": "workspace:*",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

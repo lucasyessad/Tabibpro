@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Service IA Principal
+// TabibPro — Service IA Principal
 // Orchestrateur des 7 fonctions IA + darija
 // ============================================================
 
@@ -9,7 +9,7 @@ import { DiagnosticProvider, DiagnosticRequest, DiagnosticSuggestion } from './p
 import { DarijaTranslatorProvider } from './providers/darija.provider';
 import { AnonymisationService } from './anonymisation.service';
 import { AuditIaService } from './audit-ia.service';
-import type { DarijaTranslationResult } from '@medgest/shared';
+import type { DarijaTranslationResult } from '@tabibpro/shared';
 
 export interface AiContext {
   medecinId: string;

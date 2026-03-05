@@ -1,6 +1,6 @@
 {
-  "name": "MedGest Pro",
-  "short_name": "MedGest",
+  "name": "TabibPro",
+  "short_name": "TabibPro",
   "description": "Logiciel de gestion médicale professionnel — Édition Algérie",
   "start_url": "/fr/dashboard",
   "display": "standalone",

@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Types TypeScript partagés
+// TabibPro — Types TypeScript partagés
 // ============================================================
 
 import type {
@@ -102,7 +102,7 @@ export interface Medecin {
   wilayaExercice: string;
   cachetNumerisePath?: string;
   signatureNumerisePath?: string;
-  emailPro: string;           // dr.nom@medgestpro.dz ou domaine personnalisé
+  emailPro: string;           // dr.nom@tabibpro.dz ou domaine personnalisé
 }
 
 // ---- Patient ----

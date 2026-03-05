@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Script Seed Principal — Base médicale
+// TabibPro — Script Seed Principal — Base médicale
 // ============================================================
 
 import { PrismaClient } from '../generated/client';
@@ -9,7 +9,7 @@ import { MEDICAMENTS_DZ_SEED } from './pharmacopee';
 const prisma = new PrismaClient();
 
 async function main() {
-  console.log('🌱 Initialisation des données de référence — MedGest Pro Algérie\n');
+  console.log('🌱 Initialisation des données de référence — TabibPro Algérie\n');
 
   // ---- 1. Wilayas (58) ----
   console.log('📍 Chargement des 58 wilayas...');
@@ -164,7 +164,7 @@ async function main() {
   console.log(`   ✅ ${actes.length} actes médicaux chargés`);
 
   console.log('\n🎉 Initialisation terminée avec succès !');
-  console.log('   MedGest Pro est prêt pour le marché algérien.\n');
+  console.log('   TabibPro est prêt pour le marché algérien.\n');
 }
 
 main()

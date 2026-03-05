@@ -1,7 +1,7 @@
 {
-  "name": "@medgest/api",
+  "name": "@tabibpro/api",
   "version": "1.0.0",
-  "description": "MedGest Pro — API Backend NestJS — Édition Algérie",
+  "description": "TabibPro — API Backend NestJS — Édition Algérie",
   "private": true,
   "scripts": {
     "build": "nest build",
@@ -16,13 +16,13 @@
     "test:cov": "vitest run --coverage",
     "test:e2e": "vitest run --config vitest-e2e.config.ts",
     "type-check": "tsc --noEmit",
-    "db:migrate": "pnpm --filter @medgest/db-medical db:migrate && pnpm --filter @medgest/db-service db:migrate",
-    "db:seed": "pnpm --filter @medgest/db-medical db:seed && pnpm --filter @medgest/db-service db:seed"
+    "db:migrate": "pnpm --filter @tabibpro/db-medical db:migrate && pnpm --filter @tabibpro/db-service db:migrate",
+    "db:seed": "pnpm --filter @tabibpro/db-medical db:seed && pnpm --filter @tabibpro/db-service db:seed"
   },
   "dependencies": {
-    "@medgest/shared": "workspace:*",
-    "@medgest/db-medical": "workspace:*",
-    "@medgest/db-service": "workspace:*",
+    "@tabibpro/shared": "workspace:*",
+    "@tabibpro/db-medical": "workspace:*",
+    "@tabibpro/db-service": "workspace:*",
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",

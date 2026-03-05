@@ -1,10 +1,10 @@
 -- ============================================================
--- MedGest Pro — Init DB médicale — Configuration Locale
+-- TabibPro — Init DB médicale — Configuration Locale
 -- Support multilingue : Français, Arabe, Tamazight
 -- ============================================================
 
 -- Configurer le fuseau horaire par défaut (Algérie)
-ALTER DATABASE medgest_medical SET timezone TO 'Africa/Algiers';
+ALTER DATABASE tabibpro_medical SET timezone TO 'Africa/Algiers';
 
 -- Créer des configurations de recherche full-text pour le français
 CREATE TEXT SEARCH CONFIGURATION IF NOT EXISTS french_unaccent (COPY = french);
@@ -47,5 +47,5 @@ CREATE SEQUENCE IF NOT EXISTS facture_seq START WITH 1 INCREMENT BY 1;
 
 DO $$
 BEGIN
-    RAISE NOTICE 'MedGest Pro — Configuration locale initialisée (Africa/Algiers)';
+    RAISE NOTICE 'TabibPro — Configuration locale initialisée (Africa/Algiers)';
 END $$;

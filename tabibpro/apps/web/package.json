@@ -1,7 +1,7 @@
 {
-  "name": "@medgest/web",
+  "name": "@tabibpro/web",
   "version": "1.0.0",
-  "description": "MedGest Pro — IHM Professionnelle Next.js 15",
+  "description": "TabibPro — IHM Professionnelle Next.js 15",
   "private": true,
   "scripts": {
     "dev": "next dev --port 3000",
@@ -13,7 +13,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@medgest/shared": "workspace:*",
+    "@tabibpro/shared": "workspace:*",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

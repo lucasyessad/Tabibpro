@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Point d'entrée API NestJS
+// TabibPro — Point d'entrée API NestJS
 // ============================================================
 
 import { NestFactory } from '@nestjs/core';
@@ -81,15 +81,15 @@ async function bootstrap() {
   // ---- Swagger (doc auto) ----
   if (nodeEnv !== 'production') {
     const swaggerConfig = new DocumentBuilder()
-      .setTitle('MedGest Pro API')
+      .setTitle('TabibPro API')
       .setDescription(
-        'API REST — Logiciel de gestion médicale MedGest Pro\n\n' +
+        'API REST — Logiciel de gestion médicale TabibPro\n\n' +
           '**Adapté au contexte algérien** : CNAS, pharmacopée DZ, darija, Loi 18-07\n\n' +
           'Quatre langues : Français | العربية | ⵜⴰⵎⴰⵣⵉⵖⵜ | English'
       )
       .setVersion('1.0')
-      .setContact('Support MedGest Pro', 'https://medgestpro.dz', 'support@medgestpro.dz')
-      .setLicense('Propriétaire', 'https://medgestpro.dz/licence')
+      .setContact('Support TabibPro', 'https://tabibpro.dz', 'support@tabibpro.dz')
+      .setLicense('Propriétaire', 'https://tabibpro.dz/licence')
       .addBearerAuth({ type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }, 'JWT')
       .addTag('auth', 'Authentification & MFA')
       .addTag('patients', 'Gestion des patients')
@@ -121,7 +121,7 @@ async function bootstrap() {
 
   logger.info(`
 ╔═══════════════════════════════════════════════╗
-║         🏥 MedGest Pro — API v1.0             ║
+║         🏥 TabibPro — API v1.0             ║
 ║         Édition Algérie                        ║
 ╠═══════════════════════════════════════════════╣
 ║  URL      : http://localhost:${port}               ║

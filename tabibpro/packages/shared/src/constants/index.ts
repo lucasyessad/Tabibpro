@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Constantes globales
+// TabibPro — Constantes globales
 // Édition Algérie
 // ============================================================
 

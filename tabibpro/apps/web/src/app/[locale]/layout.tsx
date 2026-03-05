@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Layout racine — Support RTL + 4 langues
+// TabibPro — Layout racine — Support RTL + 4 langues
 // ============================================================
 
 import type { Metadata, Viewport } from 'next';
@@ -30,8 +30,8 @@ const RTL_LOCALES = ['ar'];
 
 export const metadata: Metadata = {
   title: {
-    default: 'MedGest Pro',
-    template: '%s | MedGest Pro',
+    default: 'TabibPro',
+    template: '%s | TabibPro',
   },
   description: 'Logiciel de gestion médicale professionnel — Édition Algérie',
   manifest: '/manifest.json',

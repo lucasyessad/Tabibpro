@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Module Synchronisation Offline
+// TabibPro — Module Synchronisation Offline
 // Critique pour l'Algérie (zones à connectivité limitée)
 // ============================================================
 

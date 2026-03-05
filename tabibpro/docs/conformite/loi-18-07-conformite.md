@@ -1,4 +1,4 @@
-# Conformité MedGest Pro — Loi 18-07 (Algérie)
+# Conformité TabibPro — Loi 18-07 (Algérie)
 
 ## Loi 18-07 du 10 juin 2018 relative à la protection des personnes physiques dans le traitement des données à caractère personnel
 
@@ -8,11 +8,11 @@
 
 La **Loi 18-07** est la loi algérienne sur la protection des données personnelles. Elle crée des obligations pour tout organisme qui traite des données à caractère personnel de personnes physiques, et établit des droits pour les personnes dont les données sont traitées.
 
-**MedGest Pro** est conçu en conformité totale avec cette loi.
+**TabibPro** est conçu en conformité totale avec cette loi.
 
 ---
 
-## 2. Données traitées par MedGest Pro
+## 2. Données traitées par TabibPro
 
 ### 2.1 Données à caractère personnel (Article 3)
 
@@ -44,7 +44,7 @@ Les **données de santé** sont classées comme données sensibles et bénéfici
 
 Le patient peut demander l'accès à toutes ses données personnelles.
 
-**Implémentation dans MedGest Pro :**
+**Implémentation dans TabibPro :**
 ```
 GET /api/v1/patients/:id/export-donnees
 → Export complet de toutes les données du patient en JSON/PDF
@@ -91,7 +91,7 @@ Le patient peut s'opposer au traitement de ses données dans certains cas.
 
 > "Le traitement des données à caractère personnel ne peut avoir lieu qu'avec le consentement libre, exprès et éclairé de la personne concernée."
 
-**Implémentation dans MedGest Pro :**
+**Implémentation dans TabibPro :**
 
 ```typescript
 // Formulaire de consentement patient
@@ -129,7 +129,7 @@ Le formulaire de consentement est disponible en **4 langues** (FR, AR, BER, EN).
 
 > "Le transfert de données à caractère personnel vers un pays étranger ne peut avoir lieu que si ce pays assure un niveau de protection suffisant."
 
-**Architecture MedGest Pro — Conformité Article 44 :**
+**Architecture TabibPro — Conformité Article 44 :**
 
 ```
 ✅ Données médicales : Stockage LOCAL exclusif sur serveur cabinet
@@ -150,7 +150,7 @@ Le formulaire de consentement est disponible en **4 langues** (FR, AR, BER, EN).
 
 L'**ANPDP** (Autorité Nationale de Protection des Données à caractère Personnel) doit être notifiée selon les modalités en vigueur.
 
-**MedGest Pro génère automatiquement** le dossier de déclaration dans le module `Paramètres > Conformité > Déclaration ANPDP`.
+**TabibPro génère automatiquement** le dossier de déclaration dans le module `Paramètres > Conformité > Déclaration ANPDP`.
 
 ---
 
@@ -206,5 +206,5 @@ Paramètres > Cabinet > Conformité > DPO
 ---
 
 *Document mis à jour le : Mars 2026*
-*Version MedGest Pro : 1.0*
+*Version TabibPro : 1.0*
 *Référence légale : Loi 18-07 du 10 juin 2018 (JORADP n°34 du 10 juin 2018)*

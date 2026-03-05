@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Service Calendrier Algérien
+// TabibPro — Service Calendrier Algérien
 // Jours fériés nationaux + religieux (calendrier hégirien)
 // Weekend : Vendredi (5) + Samedi (6)
 // ============================================================

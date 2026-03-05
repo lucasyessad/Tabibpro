@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Utilitaires partagés
+// TabibPro — Utilitaires partagés
 // ============================================================
 
 import { WEEKEND_DAYS_DZ } from '../constants';

@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Portail Patient — Inscription
+// TabibPro — Portail Patient — Inscription
 // Inscription par TÉLÉPHONE (prioritaire en Algérie)
 // Email optionnel — Consentement Loi 18-07
 // ============================================================
@@ -14,7 +14,7 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { Phone, Eye, EyeOff, ArrowRight } from 'lucide-react';
-import { PHONE_REGEX_DZ } from '@medgest/shared';
+import { PHONE_REGEX_DZ } from '@tabibpro/shared';
 
 // ---- Validation ----
 const inscriptionSchema = z
@@ -70,7 +70,7 @@ export default function InscriptionPage() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-600 text-white text-2xl font-bold mb-4">
             M
           </div>
-          <h1 className="text-2xl font-bold text-foreground">MedGest Pro</h1>
+          <h1 className="text-2xl font-bold text-foreground">TabibPro</h1>
           <p className="text-muted-foreground mt-1 text-sm">
             {t('title')}
           </p>

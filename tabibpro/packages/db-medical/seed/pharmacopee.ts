@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — Seed Data — Pharmacopée Algérienne (ANPP)
+// TabibPro — Seed Data — Pharmacopée Algérienne (ANPP)
 // Médicaments courants disponibles sur le marché algérien
 // ============================================================
 

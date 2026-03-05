@@ -1,5 +1,5 @@
 // ============================================================
-// MedGest Pro — IA Diagnostique (Mode passif)
+// TabibPro — IA Diagnostique (Mode passif)
 // L'IA intervient UNIQUEMENT quand le médecin la sollicite
 // ============================================================
 

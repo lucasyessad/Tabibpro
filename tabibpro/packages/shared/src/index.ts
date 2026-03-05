@@ -1,4 +1,4 @@
-// MedGest Pro — Package partagé — Point d'entrée principal
+// TabibPro — Package partagé — Point d'entrée principal
 export * from './constants';
 export * from './types';
 export * from './validators';

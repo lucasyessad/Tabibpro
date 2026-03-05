@@ -1,12 +1,12 @@
 // ============================================================
-// MedGest Pro — Moteur de Synchronisation Offline
+// TabibPro — Moteur de Synchronisation Offline
 // Stratégie : offline-first, sync à la reconnexion
 // ============================================================
 
 import { Injectable, Logger } from '@nestjs/common';
 import { ConflictResolverService } from './conflict-resolver.service';
 import { QueueOfflineService } from './queue-offline.service';
-import type { SyncItem, SyncStatus } from '@medgest/shared';
+import type { SyncItem, SyncStatus } from '@tabibpro/shared';
 
 export interface SyncPushPayload {
   deviceId: string;
