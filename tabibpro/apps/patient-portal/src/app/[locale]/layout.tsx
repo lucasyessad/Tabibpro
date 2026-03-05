@@ -61,9 +61,30 @@ function IconLogout() {
   );
 }
 
+function IconFolder() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+    </svg>
+  );
+}
+
+function IconPlus() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="12" y1="8" x2="12" y2="16" />
+      <line x1="8" y1="12" x2="16" y2="12" />
+    </svg>
+  );
+}
+
+// 6 items max pour la bottom nav mobile (overflow masqué sur petits écrans)
 const navItems = [
   { href: '/fr', label: 'Accueil', icon: <IconHome /> },
+  { href: '/fr/rdv', label: 'Prendre RDV', icon: <IconPlus /> },
   { href: '/fr/mes-rdv', label: 'Mes RDV', icon: <IconCalendar /> },
+  { href: '/fr/dossier', label: 'Mon dossier', icon: <IconFolder /> },
   { href: '/fr/mes-ordonnances', label: 'Ordonnances', icon: <IconPrescription /> },
   { href: '/fr/messagerie', label: 'Messagerie', icon: <IconMessage /> },
 ];
