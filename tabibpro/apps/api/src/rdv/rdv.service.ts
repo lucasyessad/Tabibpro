@@ -1,6 +1,5 @@
 // ============================================================
 // TabibPro — Service RDV
-// Gestion agenda médecin — Weekend DZ : Ven + Sam
 // ============================================================
 
 import {
@@ -8,10 +7,10 @@ import {
 } from '@nestjs/common';
 import { PrismaMedicalService } from '../database/prisma-medical.service';
 import { CreateRdvDto, UpdateRdvDto, AgendaQueryDto } from './dto/create-rdv.dto';
-import { startOfDay, endOfDay, addMinutes, isWeekend as isoIsWeekend, getDay } from 'date-fns';
+import { startOfDay, endOfDay, addMinutes, getDay } from 'date-fns';
 import { FilAttenteGateway } from './fil-attente.gateway';
 
-// Weekend algérien : Vendredi (5) + Samedi (6)
+// Weekend algérien : Vendredi (5) + Samedi (6) — informatif seulement
 function isWeekendDZ(date: Date): boolean {
   const dow = getDay(date);
   return dow === 5 || dow === 6;
@@ -32,12 +31,6 @@ export class RdvService {
 
   async create(dto: CreateRdvDto, medecinId: string) {
     const dateHeure = new Date(dto.dateHeure);
-
-    if (isWeekendDZ(dateHeure)) {
-      throw new BadRequestException(
-        'Le cabinet est fermé le vendredi et samedi (weekend algérien). Choisissez un autre jour.'
-      );
-    }
 
     // Vérifier chevauchement
     const fin = addMinutes(dateHeure, dto.dureeMinutes);
