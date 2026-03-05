@@ -142,9 +142,12 @@ export default function FacturationPage() {
           <h1 className="text-2xl font-bold text-gray-900">Facturation</h1>
           <p className="text-sm text-gray-500 mt-1">Honoraires et règlements des actes médicaux</p>
         </div>
-        <button className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium">
+        <Link
+          href="./facturation/nouveau"
+          className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+        >
           + Nouvelle facture
-        </button>
+        </Link>
       </div>
 
       {/* Statistiques financières */}

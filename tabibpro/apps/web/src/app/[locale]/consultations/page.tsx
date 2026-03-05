@@ -163,7 +163,7 @@ export default function ConsultationsPage() {
           <p className="text-sm text-gray-500 mt-1">Historique des consultations médicales</p>
         </div>
         <Link
-          href="./rdv"
+          href="./consultations/nouveau"
           className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
         >
           <span>+</span> Nouvelle consultation
