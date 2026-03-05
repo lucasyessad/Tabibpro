@@ -32,11 +32,10 @@ win:
       arch:
         - x64
   icon: resources/icon.ico
-  publisherName: TabibPro
-  # Désactiver le code signing si pas de certificat EV configuré
-  # Pour signer : set CSC_LINK (pfx) + CSC_KEY_PASSWORD dans les secrets CI
-  signingHashAlgorithms:
-    - sha256
+  signtoolOptions:
+    publisherName: TabibPro
+    signingHashAlgorithms:
+      - sha256
 
 nsis:
   oneClick: false
