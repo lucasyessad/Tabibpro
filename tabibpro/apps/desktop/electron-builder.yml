@@ -59,11 +59,9 @@ mac:
   target:
     - target: dmg
       arch:
-        - x64
         - arm64
-    - target: zip         # Fallback pour test
+    - target: zip
       arch:
-        - x64
         - arm64
   icon: resources/icon.icns
   category: public.app-category.medical
@@ -75,6 +73,7 @@ mac:
 dmg:
   title: "TabibPro ${version}"
   icon: resources/icon.icns
+  background: null
   contents:
     - x: 410
       y: 150
