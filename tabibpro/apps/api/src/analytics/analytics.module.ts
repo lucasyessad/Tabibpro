@@ -1,8 +1,12 @@
+// ============================================================
+// TabibPro — Module Analytics
+// Statistiques cabinet médical algérien
+// ============================================================
+
 import { Module } from '@nestjs/common';
 import { AnalyticsController } from './analytics.controller';
 import { AnalyticsService } from './analytics.service';
 
-// TODO: Statistiques cabinet — rapport activité
 @Module({
   controllers: [AnalyticsController],
   providers: [AnalyticsService],
