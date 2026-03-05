@@ -18,7 +18,12 @@
     "db:seed": "turbo db:seed",
     "docker:up": "docker compose up -d",
     "docker:down": "docker compose down",
-    "docker:logs": "docker compose logs -f"
+    "docker:logs": "docker compose logs -f",
+    "desktop:dev": "cd apps/desktop && npm run dev",
+    "desktop:build": "cd apps/desktop && npm run build",
+    "desktop:package:win": "cd apps/desktop && npm run package:win",
+    "desktop:package:mac": "cd apps/desktop && npm run package:mac",
+    "desktop:package:all": "cd apps/desktop && npm run package:all"
   },
   "devDependencies": {
     "turbo": "^2.3.0",
