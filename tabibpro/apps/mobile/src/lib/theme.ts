@@ -33,11 +33,13 @@ export const COLORS = {
     800: '#1F2937',
     900: '#111827',
   },
-  danger:  '#EF4444',
-  warning: '#F59E0B',
-  success: '#10B981',
-  white:   '#FFFFFF',
-  black:   '#000000',
+  danger:   '#EF4444',
+  warning:  '#F59E0B',
+  success:  '#10B981',
+  emerald:  '#059669',
+  amber:    '#D97706',
+  white:    '#FFFFFF',
+  black:    '#000000',
 };
 
 export const TYPOGRAPHY = {
@@ -47,6 +49,7 @@ export const TYPOGRAPHY = {
   body: { fontSize: 15, fontWeight: '400' as const, lineHeight: 22 },
   bodySmall: { fontSize: 13, fontWeight: '400' as const, lineHeight: 18 },
   label: { fontSize: 12, fontWeight: '500' as const, letterSpacing: 0.3 },
+  small:   { fontSize: 13, fontWeight: '400' as const, lineHeight: 18 },
   caption: { fontSize: 11, fontWeight: '400' as const },
 };
 
