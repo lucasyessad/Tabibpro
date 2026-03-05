@@ -21,13 +21,22 @@ extraResources:
     to: ".env.desktop.example"
 
 # ---- Windows (.exe via NSIS) ----
+# Build natif sur Windows (GitHub Actions runner windows-latest)
+# Pour tester en local sur Linux : pnpm exec electron-builder --win zip
 win:
   target:
     - target: nsis
       arch:
         - x64
+    - target: zip         # Fallback sans wine (test local uniquement)
+      arch:
+        - x64
   icon: resources/icon.ico
   publisherName: TabibPro
+  # Désactiver le code signing si pas de certificat EV configuré
+  # Pour signer : set CSC_LINK (pfx) + CSC_KEY_PASSWORD dans les secrets CI
+  signingHashAlgorithms:
+    - sha256
 
 nsis:
   oneClick: false
@@ -45,9 +54,15 @@ nsis:
   runAfterFinish: true
 
 # ---- macOS (.dmg) ----
+# Build natif sur macOS (GitHub Actions runner macos-14)
+# Pour signer : set APPLE_ID + APPLE_TEAM_ID + APPLE_ID_PASSWORD dans les secrets CI
 mac:
   target:
     - target: dmg
+      arch:
+        - x64
+        - arm64
+    - target: zip         # Fallback pour test
       arch:
         - x64
         - arm64

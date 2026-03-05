@@ -307,9 +307,8 @@ app.whenReady().then(bootstrap).catch((e) => {
   app.quit()
 })
 
-app.on('window-all-closed', (e: Event) => {
-  // Prevent default quit — managed by tray
-  e.preventDefault()
+app.on('window-all-closed', () => {
+  // Do not quit — managed by tray
 })
 
 app.on('before-quit', () => {
