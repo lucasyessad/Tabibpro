@@ -6,6 +6,7 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { ConfigService } from '@nestjs/config';
+import { IoAdapter } from '@nestjs/platform-socket.io';
 import helmet from 'helmet';
 import compression from 'compression';
 import { pino } from 'pino';
@@ -71,11 +72,14 @@ async function bootstrap() {
     })
   );
 
+  // ---- WebSocket ----
+  app.useWebSocketAdapter(new IoAdapter(app));
+
   // ---- Filtres & intercepteurs globaux ----
   app.useGlobalFilters(new HttpExceptionFilter());
   app.useGlobalInterceptors(
     new TransformInterceptor(),
-    new AuditInterceptor(app.get('AuditService'))
+    new AuditInterceptor(),
   );
 
   // ---- Swagger (doc auto) ----
