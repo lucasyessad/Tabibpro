@@ -117,7 +117,7 @@ export default async function OrdonnancesPage({ params }: OrdonnancesPageProps) 
           </p>
         </div>
         <Link
-          href={`/${locale}/ordonnances/nouvelle`}
+          href={`/${locale}/ordonnances/nouveau`}
           className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 transition-colors"
         >
           <span>+</span>
